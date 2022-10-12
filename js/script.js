@@ -252,27 +252,27 @@ $('.owl-carousel').owlCarousel({
 
 
 /////////////////////////translation
-// const languageSelector = document.querySelector('select');
-// console.log(languageSelector);
-// addEventListener('change',(even)=>{
-//     setLanguage(even.target.value);
-//     localStorage.setItem("lang",even.target.value)
-// })
+const languageSelector = document.querySelector('select');
+console.log(languageSelector);
+addEventListener('change',(even)=>{
+    setLanguage(even.target.value);
+    localStorage.setItem("lang",even.target.value)
+})
 
-// document.addEventListener('DOMContentLoaded',()=>{
-//     const language = localStorage.getItem('lang') ;
-//     setLanguage(language)
-//     console.log(language);
-// })
+document.addEventListener('DOMContentLoaded',()=>{
+    const language = localStorage.getItem('lang') ;
+    setLanguage(language)
+    console.log(language);
+})
 
-// const setLanguage = (language)=>{
-// const elements = document.querySelectorAll('[data-i18n]') ;
-// console.log(elements);
-// elements.forEach((element)=>{
-//     const translationKet = element.getAttribute('data-i18n') ;
-//     element.textContent = translation[language][translationKet]
+const setLanguage = (language)=>{
+const elements = document.querySelectorAll('[data-i18n]') ;
+console.log(elements);
+elements.forEach((element)=>{
+    const translationKet = element.getAttribute('data-i18n') ;
+    element.textContent = translation[language][translationKet]
    
-// })
-// document.dir = language === "ar" ?"rtl" : "ltr" ;
+})
+document.dir = language === "ar" ?"rtl" : "ltr" ;
 
-// }
+}
