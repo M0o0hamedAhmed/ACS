@@ -57,11 +57,17 @@ let about_us = document.getElementsByClassName('about_us')[0];
 let services = document.getElementsByClassName('services')[0];
 let works = document.getElementsByClassName('works')[0];
 let blog = document.getElementsByClassName('blog')[0];
+let page = document.getElementsByClassName('page')[0];
+let contact = document.getElementsByClassName('contact')[0];
 let search = document.getElementsByClassName('search')[0]
 let phone = document.getElementsByClassName('phone')[0]
 let number_phone = document.getElementsByClassName('number_phone')[0]
+let angle_down = document.querySelectorAll('.fa-angle-down') ;
+let arr = [logo,home,about_us,services,works,blog,page,contact,search,phone,number_phone]
+// console.log("angle-down", angle_down);
+
 let bod = document.body.offsetHeight
-let color_1 = 'black'
+let color_1 = '#091D3E'
 // let arr= [logo,home,about_us,services,works,blog] ;
 let counter = document.getElementById('counter');
 let upto = 0;
@@ -74,16 +80,20 @@ document.onscroll = function () {
         position.style.backgroundColor = "white";
         position.style.boxShadow = "0  1px 10px  0  #9B9B9B";
 
-        logo.style.color = color_1
-        home.style.color = color_1
-        about_us.style.color = color_1
-        services.style.color = color_1
-        works.style.color = color_1
-        blog.style.color = color_1
-        search.style.color = color_1
-        phone.style.color = color_1
-        number_phone.style.color = color_1;
-
+        // logo.style.color = color_1
+        // home.style.color = color_1
+        // about_us.style.color = color_1
+        // services.style.color = color_1
+        // works.style.color = color_1
+        // blog.style.color = color_1
+        // search.style.color = color_1
+        // phone.style.color = color_1
+        // number_phone.style.color = color_1;
+        arr.forEach((e)=>e.style.color=color_1)
+        for(let el of angle_down){
+   el.style.color =  color_1
+  
+        }
         ///Counter
 
 
@@ -91,15 +101,19 @@ document.onscroll = function () {
     } else if (document.documentElement.scrollTop < 150) {
         position.style.backgroundColor = "transparent";
         position.style.boxShadow = "0  0 0  0  #9B9B9B";
-        logo.style.color = color_2
-        home.style.color = color_2
-        about_us.style.color = color_2
-        services.style.color = color_2
-        works.style.color = color_2
-        blog.style.color = color_2
-        search.style.color = color_2
-        phone.style.color = color_2
-        number_phone.style.color = color_2
+        // logo.style.color = color_2
+        // home.style.color = color_2
+        // about_us.style.color = color_2
+        // services.style.color = color_2
+        // works.style.color = color_2
+        // blog.style.color = color_2
+        // search.style.color = color_2
+        // phone.style.color = color_2
+        // number_phone.style.color = color_2
+        arr.forEach((e)=>e.style.color=color_2)
+        for(let el of angle_down){
+            el.style.color =  color_2
+        }
         upto = 0;
 
 
@@ -238,27 +252,27 @@ $('.owl-carousel').owlCarousel({
 
 
 /////////////////////////translation
-const languageSelector = document.querySelector('select');
-console.log(languageSelector);
-addEventListener('change',(even)=>{
-    setLanguage(even.target.value);
-    localStorage.setItem("lang",even.target.value)
-})
+// const languageSelector = document.querySelector('select');
+// console.log(languageSelector);
+// addEventListener('change',(even)=>{
+//     setLanguage(even.target.value);
+//     localStorage.setItem("lang",even.target.value)
+// })
 
-document.addEventListener('DOMContentLoaded',()=>{
-    const language = localStorage.getItem('lang') ;
-    setLanguage(language)
-    console.log(language);
-})
+// document.addEventListener('DOMContentLoaded',()=>{
+//     const language = localStorage.getItem('lang') ;
+//     setLanguage(language)
+//     console.log(language);
+// })
 
-const setLanguage = (language)=>{
-const elements = document.querySelectorAll('[data-i18n]') ;
-console.log(elements);
-elements.forEach((element)=>{
-    const translationKet = element.getAttribute('data-i18n') ;
-    element.textContent = translation[language][translationKet]
+// const setLanguage = (language)=>{
+// const elements = document.querySelectorAll('[data-i18n]') ;
+// console.log(elements);
+// elements.forEach((element)=>{
+//     const translationKet = element.getAttribute('data-i18n') ;
+//     element.textContent = translation[language][translationKet]
    
-})
-document.dir = language === "ar" ?"rtl" : "ltr" ;
+// })
+// document.dir = language === "ar" ?"rtl" : "ltr" ;
 
-}
+// }

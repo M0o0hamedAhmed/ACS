@@ -6,6 +6,16 @@ body {
     // font-size: 30rem ;
 
 
+    %sectionNav {
+        top: 88px;
+        opacity: 1;
+        overflow: visible;
+        height: max-content;
+        width: 13rem;
+        overflow: hidden;
+
+    }
+
     @keyframes pulse {
         0% {
             transform: scale(1);
@@ -100,7 +110,7 @@ body {
         nav {
             display: flex;
             justify-content: center;
-            padding: 10px 0;
+            // padding: 10px 0;
             width: 100%;
             transition: all .5s ease;
             -webkit-transition: all .5s ease;
@@ -170,8 +180,13 @@ body {
                         -ms-border-radius: 7%;
                         background-color: transparent;
 
-                        option {}
+                        a {
+                            option{
+                                cursor: pointer;
+                            }
+                        }
                     }
+
                     select:focus {
                         border: none;
                     }
@@ -204,7 +219,8 @@ body {
 
                         div {
                             display: flex;
-                            margin: 0 10px;
+                            padding: 10px 5px;
+                            // margin: 0 10px;
                             // li:hover>a {
                             //     color: #0092FF;
                             // }
@@ -213,7 +229,7 @@ body {
                             //     color: #0092FF;
                             // }
                             i {
-                                margin: 0 2px;
+                                margin: 0 10px;
                             }
 
                             li {
@@ -221,7 +237,7 @@ body {
                                 //general nav bar
 
                                 // margin-left: 20px;
-                                padding: 15px 0;
+                                padding: 35px 0;
                                 transition: all .5s ease;
                                 -webkit-transition: all .5s ease;
                                 -moz-transition: all .5s ease;
@@ -242,45 +258,82 @@ body {
                                 // }
 
                                 ul {
-                                    //  left: -800px;
-                                    //  margin: 50px ;
-                                    // left: 20px;
-                                    // opacity: 0;
-                                    // padding: 40px;
+                                    //left: -800px;
+                                    //margin: 50px ;
+                                    //left: 20px;
+                                    //opacity: 0;
+                                    //padding: 40px;
                                     height: 0;
+                                    width: 0;
                                     overflow: hidden;
-
                                     padding: 0;
                                     margin: 0;
                                     color: #9B9B9B;
                                     list-style-type: none;
                                     background-color: #fff;
                                     font-size: 15px;
-                                    // font-weight: bold;
-                                    transition: all .3s ease;
-                                    -webkit-transition: all .53s ease;
-                                    -moz-transition: all .53s ease;
-                                    -ms-transition: all .53s ease;
-                                    -o-transition: all .53s ease;
+                                    //font-weight: bold;
+                                    transition: all .7s ease;
+                                    -webkit-transition: all .7s ease;
+                                    -moz-transition: all .7s ease;
+                                    -ms-transition: all .7s ease;
+                                    -o-transition: all .7s ease;
                                     position: absolute;
-                                    border-radius: 5%; //====                                                                                        li ;
-                                    -webkit-border-radius: 5%; //====                                                                                        li ;
-                                    -moz-border-radius: 50%; //====                                                                                        li ;
-                                    -ms-border-radius: 50%; //====                                                                                        li ;
-                                    -o-border-radius: 50%;
-
-                                    li {
-                                        padding: 10px;
+                                    //border-radius: 5%;
+                                    //====li:;
+                                    //-webkit-border-radius: 5%;
+                                    //====li:;
+                                    //-moz-border-radius: 50%;
+                                    //====li:;
+                                    //-ms-border-radius: 50%;
+                                    //====li:;
+                                    //-o-border-radius: 50%;
+                                    // display: flex;
+                                    // flex-direction: column;
+                                    // justify-content: space-between;
+                                    li
+{
+                                        padding: 15px;
                                         margin: 0;
-                                        border-bottom: 1px solid #9B9B9B;
+                                        border-bottom: 2px solid #F9F9F9;
+
+
+                                       
+                                       
+                                      width: 13rem;
+                                        // position: relative;
+                                        // z-index: 1;
+                                        display: flex;
+                                        justify-content: space-between;
+                                     
+
+                                        i{
+                                            transition: all .7s ease;
+                                            -webkit-transition: all .7s ease;
+                                            -moz-transition: all .7s ease;
+                                            -ms-transition: all .7s ease;
+                                            -o-transition: all .7s ease;
+                                            opacity:0     ;
+                                            padding-right:20px
+                                            //position: absolute;
+                                            //left: 10px;
+                                            //z-index: 2;
+                                                                                
+}
                                     }
 
 
                                     //====                                                        
                                     // 
                                     li:hover {
-                                        font-size: 20px;
+                                        color: #091D3E;
+                                        background-color: #F9F9F9;
+                                        // font-size: 20px;
+                                      
 
+                                    }
+                                    li:hover  > i{
+                                        opacity: 1;
                                     }
                                 }
 
@@ -317,11 +370,13 @@ body {
                         }
 
                         .navHome:hover .home ul {
-                            top: 50px;
-                            overflow: visible;
-                            height: max-content;
-                            padding: 10px;
-                            overflow: hidden;
+                            // top: 88px;
+                            // opacity: 1;
+                            // overflow: visible;
+                            // height: max-content;
+                            // width: 13rem;
+                            // overflow: hidden;
+                            @extend %sectionNav
 
                         }
 
@@ -347,11 +402,14 @@ body {
                         }
 
                         .navAbout_us:hover .about_us ul {
-                            top: 50px;
-                            overflow: visible;
-                            height: max-content;
-                            padding: 10px;
-                            overflow: hidden;
+                            // top: 88px;
+                            // opacity: 1;
+                            // overflow: visible;
+                            // height: max-content;
+                            // width: 10rem;
+                            // padding: 10px;
+                            // overflow: hidden;
+                            @extend %sectionNav
 
                         }
 
@@ -377,11 +435,14 @@ body {
                         }
 
                         .navServices:hover .services ul {
-                            top: 50px;
-                            overflow: visible;
-                            height: max-content;
-                            padding: 10px;
-                            overflow: hidden;
+                            // top: 88px;
+                            // opacity: 1;
+                            // overflow: visible;
+                            // height: max-content;
+                            // width: 10rem;
+                            // padding: 10px;
+                            // overflow: hidden;
+                            @extend %sectionNav
 
                         }
 
@@ -408,11 +469,14 @@ body {
 
 
                         .navWorks:hover .works ul {
-                            top: 50px;
-                            overflow: visible;
-                            height: max-content;
-                            padding: 10px;
-                            overflow: hidden;
+                            // top: 88px;
+                            // opacity: 1;
+                            // overflow: visible;
+                            // height: max-content;
+                            // width: 10rem;
+                            // padding: 10px;
+                            // overflow: hidden;
+                            @extend %sectionNav
 
                         }
 
@@ -440,12 +504,14 @@ body {
 
 
                         .navBlog:hover .blog ul {
-                            top: 50px;
-                            overflow: visible;
-                            height: max-content;
-                            padding: 10px;
-                            overflow: hidden;
-
+                            // top: 88px;
+                            // opacity: 1;
+                            // overflow: visible;
+                            // height: max-content;
+                            // width: 10rem;
+                            // padding: 10px;
+                            // overflow: hidden;
+                            @extend %sectionNav
                         }
 
                         .navPage {
@@ -471,11 +537,14 @@ body {
 
 
                         .navPage:hover .page ul {
-                            top: 50px;
-                            overflow: visible;
-                            height: max-content;
-                            padding: 10px;
-                            overflow: hidden;
+                            // top: 88px;
+                            // opacity: 1;
+                            // overflow: visible;
+                            // height: max-content;
+                            // width: 10rem;
+                            // padding: 10px;
+                            // overflow: hidden;
+                            @extend %sectionNav
 
                         }
 
@@ -486,11 +555,14 @@ body {
                         }
 
                         .navContact:hover .contact ul {
-                            top: 50px;
-                            overflow: visible;
-                            height: max-content;
-                            padding: 10px;
-                            overflow: hidden;
+                            // top: 88px;
+                            // opacity: 1;
+                            // overflow: visible;
+                            // height: max-content;
+                            // width: 10rem;
+                            // padding: 10px;
+                            // overflow: hidden;
+                            @extend %sectionNav
 
                         }
 
@@ -958,8 +1030,8 @@ body {
 
         .container {
             width: 80%;
-            // height: 100%;
-            background-image: url(../img/01_about.jpg);
+            height: 100%;
+            //background-image: url(../img/01_about.jpg);
             border-radius: 2%;
             -webkit-border-radius: 2%;
             -moz-border-radius: 2%;
@@ -971,19 +1043,19 @@ body {
 
 
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-start  ;
             align-items: center;
 
-            .backgroundContainer {
-                position: absolute;
-                right: 0;
-                // right: 0;
-                width: 80%;
-                height: 100%;
-                // background-color: #0092FF;
-                // background-color:rgb(0 146 255 / 90%);
-                background-color: rgba(#0092FF, .8);
-            }
+            // .backgroundContainer {
+            //     position: absolute;
+            //     right: 0;
+            //     // right: 0;
+            //     width: 80%;
+            //     height: 100%;
+            //     // background-color: #0092FF;
+            //     // background-color:rgb(0 146 255 / 90%);
+            //     background-color: rgba(#0092FF, .8);
+            // }
 
             .img {
                 width: 40%;
@@ -992,7 +1064,7 @@ body {
                 position: absolute;
                 left: 0;
 
-                background-image: url(../img/01_about.jpg);
+               // background-image: url(../img/01_about.jpg);
                 border-radius: 2%;
                 -webkit-border-radius: 2%;
                 -moz-border-radius: 2%;
@@ -1005,6 +1077,8 @@ body {
             }
 
             .reviews {
+                display: block !important;
+                position: relative;
                 width: 70%;
                 height: 100%;
 
@@ -1016,9 +1090,9 @@ body {
                     justify-content: center;
                     align-items: center;
 
-                    .owl-dots {
-                        display: none;
-                    }
+                    // .owl-dots {
+                    //     display: none;
+                    // }
 
                     .owl-stage-outer {
 
@@ -1134,7 +1208,7 @@ body {
                     width: 50%;
                     padding: 10px;
                     position: relative;
-
+                
 
 
                     input {
@@ -1177,6 +1251,7 @@ body {
                         top: 23%;
                         right: 30px;
                         font-size: 30px;
+                        
                     }
 
                 }

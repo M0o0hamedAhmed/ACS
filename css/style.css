@@ -4,6 +4,16 @@ body {
   height: 2000px;
   font-family: "Teko", "Inconsolata", "serif";
 }
+body header nav .container .sections .ul_general .navContact:hover .contact ul, body header nav .container .sections .ul_general .navPage:hover .page ul, body header nav .container .sections .ul_general .navBlog:hover .blog ul, body header nav .container .sections .ul_general .navWorks:hover .works ul, body header nav .container .sections .ul_general .navServices:hover .services ul, body header nav .container .sections .ul_general .navAbout_us:hover .about_us ul, body header nav .container .sections .ul_general .navHome:hover .home ul {
+  top: 88px;
+  opacity: 1;
+  overflow: visible;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 13rem;
+  overflow: hidden;
+}
 @-webkit-keyframes pulse {
   0% {
     transform: scale(1);
@@ -105,7 +115,6 @@ body header {
 body header nav {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
   width: 100%;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -156,6 +165,9 @@ body header nav .container .selectLang select {
   -ms-border-radius: 7%;
   background-color: transparent;
 }
+body header nav .container .selectLang select a option {
+  cursor: pointer;
+}
 body header nav .container .selectLang select:focus {
   border: none;
 }
@@ -180,13 +192,13 @@ body header nav .container .sections .ul_general {
 }
 body header nav .container .sections .ul_general div {
   display: flex;
-  margin: 0 10px;
+  padding: 10px 5px;
 }
 body header nav .container .sections .ul_general div i {
-  margin: 0 2px;
+  margin: 0 10px;
 }
 body header nav .container .sections .ul_general div li {
-  padding: 15px 0;
+  padding: 35px 0;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -196,6 +208,7 @@ body header nav .container .sections .ul_general div li {
 }
 body header nav .container .sections .ul_general div li ul {
   height: 0;
+  width: 0;
   overflow: hidden;
   padding: 0;
   margin: 0;
@@ -203,25 +216,36 @@ body header nav .container .sections .ul_general div li ul {
   list-style-type: none;
   background-color: #fff;
   font-size: 15px;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.53s ease;
-  -moz-transition: all 0.53s ease;
-  -ms-transition: all 0.53s ease;
-  -o-transition: all 0.53s ease;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
   position: absolute;
-  border-radius: 5%;
-  -webkit-border-radius: 5%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
 }
 body header nav .container .sections .ul_general div li ul li {
-  padding: 10px;
+  padding: 15px;
   margin: 0;
-  border-bottom: 1px solid #9B9B9B;
+  border-bottom: 2px solid #F9F9F9;
+  width: 13rem;
+  display: flex;
+  justify-content: space-between;
+}
+body header nav .container .sections .ul_general div li ul li i {
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  opacity: 0;
+  padding-right: 20px;
 }
 body header nav .container .sections .ul_general div li ul li:hover {
-  font-size: 20px;
+  color: #091D3E;
+  background-color: #F9F9F9;
+}
+body header nav .container .sections .ul_general div li ul li:hover > i {
+  opacity: 1;
 }
 body header nav .container .sections .ul_general div li li:hover {
   color: #0092FF;
@@ -229,69 +253,6 @@ body header nav .container .sections .ul_general div li li:hover {
 body header nav .container .sections .ul_general div:hover > li a,
 body header nav .container .sections .ul_general div:hover > li i {
   color: #0092FF;
-}
-body header nav .container .sections .ul_general .navHome:hover .home ul {
-  top: 50px;
-  overflow: visible;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding: 10px;
-  overflow: hidden;
-}
-body header nav .container .sections .ul_general .navAbout_us:hover .about_us ul {
-  top: 50px;
-  overflow: visible;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding: 10px;
-  overflow: hidden;
-}
-body header nav .container .sections .ul_general .navServices:hover .services ul {
-  top: 50px;
-  overflow: visible;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding: 10px;
-  overflow: hidden;
-}
-body header nav .container .sections .ul_general .navWorks:hover .works ul {
-  top: 50px;
-  overflow: visible;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding: 10px;
-  overflow: hidden;
-}
-body header nav .container .sections .ul_general .navBlog:hover .blog ul {
-  top: 50px;
-  overflow: visible;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding: 10px;
-  overflow: hidden;
-}
-body header nav .container .sections .ul_general .navPage:hover .page ul {
-  top: 50px;
-  overflow: visible;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding: 10px;
-  overflow: hidden;
-}
-body header nav .container .sections .ul_general .navContact:hover .contact ul {
-  top: 50px;
-  overflow: visible;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding: 10px;
-  overflow: hidden;
 }
 body header nav .container .info_icon_phone {
   display: flex;
@@ -562,7 +523,7 @@ body .customeReviews {
 }
 body .customeReviews .container {
   width: 80%;
-  background-image: url(../img/01_about.jpg);
+  height: 100%;
   border-radius: 2%;
   -webkit-border-radius: 2%;
   -moz-border-radius: 2%;
@@ -571,22 +532,14 @@ body .customeReviews .container {
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
-}
-body .customeReviews .container .backgroundContainer {
-  position: absolute;
-  right: 0;
-  width: 80%;
-  height: 100%;
-  background-color: rgba(0, 146, 255, 0.8);
 }
 body .customeReviews .container .img {
   width: 40%;
   height: 70%;
   position: absolute;
   left: 0;
-  background-image: url(../img/01_about.jpg);
   border-radius: 2%;
   -webkit-border-radius: 2%;
   -moz-border-radius: 2%;
@@ -596,6 +549,8 @@ body .customeReviews .container .img {
   background-size: 100%;
 }
 body .customeReviews .container .reviews {
+  display: block !important;
+  position: relative;
   width: 70%;
   height: 100%;
 }
@@ -605,9 +560,6 @@ body .customeReviews .container .reviews .owl-carousel {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-body .customeReviews .container .reviews .owl-carousel .owl-dots {
-  display: none;
 }
 body .customeReviews .container .reviews .owl-carousel .owl-stage-outer .owl-stage .active:first-child {
   width: 1000px;
