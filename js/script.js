@@ -1,4 +1,5 @@
 import translation from './translation.js';
+// import trans from '../trans.json'
 
 
 
@@ -63,23 +64,26 @@ let search = document.getElementsByClassName('search')[0]
 let phone = document.getElementsByClassName('phone')[0]
 let number_phone = document.getElementsByClassName('number_phone')[0]
 let angle_down = document.querySelectorAll('.fa-angle-down') ;
-let arr = [logo,home,about_us,services,works,blog,page,contact,search,phone,number_phone]
-// console.log("angle-down", angle_down);
+let  languageSelector = document.querySelectorAll('.selectLang')[0];
+let  languageList = document.querySelector('.selectLang ul ul')  ;
+let arr = [logo,home,about_us,services,works,blog,page,contact,search,phone,number_phone,languageSelector]
 
+//  languageSelector[0].style.color=''
 let bod = document.body.offsetHeight
 let color_1 = '#091D3E'
+let color_2 = 'white'
 // let arr= [logo,home,about_us,services,works,blog] ;
 let counter = document.getElementById('counter');
 let upto = 0;
 let num = 1
-let color_2 = 'white'
+
 document.onscroll = function () {
 
 
     if (document.documentElement.scrollTop > 250) {
         position.style.backgroundColor = "white";
         position.style.boxShadow = "0  1px 10px  0  #9B9B9B";
-
+languageList.style.backgroundColor='#F9F9F9' ;
         // logo.style.color = color_1
         // home.style.color = color_1
         // about_us.style.color = color_1
@@ -101,6 +105,7 @@ document.onscroll = function () {
     } else if (document.documentElement.scrollTop < 150) {
         position.style.backgroundColor = "transparent";
         position.style.boxShadow = "0  0 0  0  #9B9B9B";
+        languageList.style.backgroundColor='transparent' ;
         // logo.style.color = color_2
         // home.style.color = color_2
         // about_us.style.color = color_2
@@ -252,27 +257,50 @@ $('.owl-carousel').owlCarousel({
 
 
 /////////////////////////translation
-const languageSelector = document.querySelector('select');
-console.log(languageSelector);
-addEventListener('change',(even)=>{
-    setLanguage(even.target.value);
-    localStorage.setItem("lang",even.target.value)
+
+const telegram = document.querySelector('.fa-telegram')
+// console.log('languageSelector',languageSelector);
+
+addEventListener('click',(even)=>{
+    setLanguage(even.target.getAttribute('value'));
+    localStorage.setItem("lang",even.target.getAttribute('value')) ;
+    console.log(even.target.getAttribute('value'));
+    
 })
 
 document.addEventListener('DOMContentLoaded',()=>{
+
     const language = localStorage.getItem('lang') ;
+   
+    language == null ? "en" : language
+
+     console.log("language",language);
+
     setLanguage(language)
-    console.log(language);
+    
 })
 
 const setLanguage = (language)=>{
 const elements = document.querySelectorAll('[data-i18n]') ;
-console.log(elements);
+// console.log(elements);
 elements.forEach((element)=>{
     const translationKet = element.getAttribute('data-i18n') ;
-    element.textContent = translation[language][translationKet]
-   
+    console.log(language);
+   element.textContent = translation[language][translationKet]
+   element.placeholder = translation[language][translationKet]
+   console.log('elementt =>',element.placeholder);
+//    element[0].childNodes[1].attributes.placeholder.nodeValue  = translation[language][translationKet]
+   console.log('element.textContent =>', element.textContent ,'translation[language][translationKet]=>' , translation[language][translationKet]);
+//    let input = document.getElementsByClassName('input')[0].childNodes[1].attributes.placeholder.nodeValue 
+// let input = document.getElementsByClassName('input')[0].childNodes[1].attributes.placeholder 
+//    input = translation[language][translationKet]
+//    console.log('translation[language][translationKet]',input);
 })
 document.dir = language === "ar" ?"rtl" : "ltr" ;
+console.log(" telegram => ", telegram.getAttribute('dir'));
 
 }
+
+// console.log('trans',trans);
+let input = document.getElementsByClassName('input')[0].childNodes[1].attributes.placeholder.nodeValue 
+console.log("Input => ", input); 

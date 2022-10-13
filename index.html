@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
     <meta charset="UTF-8">
@@ -34,35 +34,45 @@
                        2.1.2-h1 
                        2.2.3-p 
                        2.2.4-buttons
-    
+     
     -->
     <header>
         <nav id="fixed">
-            <div class="container"> 
+            <div class="container">
                 <div class="logo">
                     ACS
                 </div>
                 <div class="selectLang">
-                    <select value="en" >
+                    <!-- <select value="en" >
                         <option value="en" data-i18n="english">  English </option>
-                        <option  data-i18n="arabic"  value="ar"   > Arabicc</option>
-                        <!-- <option value="en" >   <a href="./index.html"  data-i18n="english">English  </a></option>
-                  
-                           <option  value="ar"   > <a data-i18n="arabic" href="https://github.com/mohammadqaderi/Ecommerce-Demo/blob/master/src/app/shared/material/material.module.ts"> Arabicc</a></option>
-                          -->
+                        <option  value="ar"  data-i18n="arabic"    > Arabic</option>
+                    </select> -->
+                    <ul>
+                        <li>
+                            <span data-i18n="language">Language</span>
+                            <i class="fa-solid fa-angle-down"></i></li>
+                        <ul>
+                            <li class="language" value="en" data-i18n="english">English
 
-                    </select>
- 
+                            </li>
+                            <li value="ar" data-i18n="arabic">
+                                Arabic
+
+                            </li>
+                        </ul>
+                    </ul>
+
                 </div>
                 <div class="sections">
                     <ul class="ul_general">
                         <div class="navHome">
                             <li class="home"> <a data-i18n="home">Home </a>
                                 <ul>
-                                    <li  data-i18n="homeMain">Home Main <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="homeMoern">Home Modern <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="homeClassic">Home Classic Classic<i class="fa-solid fa-right-long"></i></li>
-                                    
+                                    <li data-i18n="homeMain">Home Main <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="homeMoern">Home Modern <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="homeClassic">Home Classic Classic<i
+                                            class="fa-solid fa-right-long"></i></li>
+
 
                                 </ul>
                             </li>
@@ -71,8 +81,9 @@
                         <div class="navAbout_us">
                             <li class="about_us"> <a data-i18n="about">About Us </a>
                                 <ul>
-                                    <li  data-i18n="about">about_us <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="testimonials">Testimonials  <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="about">about_us <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="testimonials">Testimonials <i class="fa-solid fa-right-long"></i>
+                                    </li>
                                     <li data-i18n="team"> Team <i class="fa-solid fa-right-long"></i></li>
                                 </ul>
                             </li>
@@ -82,9 +93,9 @@
                             <li class="services"> <a data-i18n="services">Sevices </a>
 
                                 <ul>
-                                    <li  data-i18n="services">services <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="details">Service Details <i class="fa-solid fa-right-long"></i></li>
-                                 
+                                    <li data-i18n="services">services <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="details">Service Details <i class="fa-solid fa-right-long"></i></li>
+
                                 </ul>
                             </li>
                             <li><i class="fa-solid fa-angle-down"></i></li>
@@ -93,9 +104,10 @@
                             <li class="works"> <a data-i18n="works">Works </a>
 
                                 <ul>
-                                    <li  data-i18n="works">Works <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="worksDetails">Works Details <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="allWorks">All Works <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="works">Works <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="worksDetails">Works Details <i class="fa-solid fa-right-long"></i>
+                                    </li>
+                                    <li data-i18n="allWorks">All Works <i class="fa-solid fa-right-long"></i></li>
                                 </ul>
                             </li>
                             <li><i class="fa-solid fa-angle-down"></i></li>
@@ -105,9 +117,11 @@
                                 <ul>
                                     <li data-i18n="blog">Blog <i class="fa-solid fa-right-long"></i></li>
                                     <li data-i18n="blogGrid">Blog Grid <i class="fa-solid fa-right-long"></i></li>
-                                    <li data-i18n="blogGridSidebar">Blog Grid Sidebar  <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="blogStandard">Blog Standard <i class="fa-solid fa-right-long"></i></li>
-                                    <li   data-i18n="singleBlog">Single Blog <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="blogGridSidebar">Blog Grid Sidebar <i
+                                            class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="blogStandard">Blog Standard <i class="fa-solid fa-right-long"></i>
+                                    </li>
+                                    <li data-i18n="singleBlog">Single Blog <i class="fa-solid fa-right-long"></i></li>
                                 </ul>
                             </li>
                             <li><i class="fa-solid fa-angle-down"></i></li>
@@ -116,14 +130,15 @@
                             <li class="page"> <a data-i18n="page">Page </a>
 
                                 <ul>
-                                    <li  data-i18n="awards">Awards <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="careers">Careers <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="faqs">FAQs <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="sponsor">Sponsor <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="shop">shop <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="productDetails">Product Details <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="shop">shop <i class="fa-solid fa-right-long"></i></li>
-                                    <li  data-i18n="errorPage">Error Page <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="awards">Awards <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="careers">Careers <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="faqs">FAQs <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="sponsor">Sponsor <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="shop">shop <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="productDetails">Product Details <i
+                                            class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="shop">shop <i class="fa-solid fa-right-long"></i></li>
+                                    <li data-i18n="errorPage">Error Page <i class="fa-solid fa-right-long"></i></li>
                                 </ul>
                             </li>
                             <li><i class="fa-solid fa-angle-down"></i></li>
@@ -146,7 +161,7 @@
                     <a href="tel:01123218274"> <i class="fa-solid fa-phone phone"></i></a>
 
                     <div>
-                        <span   data-i18n="phoneNumber">Phone Number</span>
+                        <span data-i18n="phoneNumber">Phone Number</span>
                         <span class="number_phone">0112-321-8274</span>
                     </div>
                     <!-- <span>Info </span> -->
@@ -155,15 +170,17 @@
         </nav>
         <div class="container">
             <div class="description">
-                <span   data-i18n="ready"> Ready To Make Your Dream</span>
-                <h1   data-i18n="excellent">Excellent IT Services For Your Success</h1>
-                <p   data-i18n="getData">GateData Are A IT Solutions & Technology Services Provider Institutions. Suitable For IT Solutions, IT Technology, IT Business, Software, Digital Solution And Any Related Services Company Field.</p>
-                <div    class="buttons">
-                    <button   data-i18n="ourServices" class="btn-1">
+                <span data-i18n="ready"> Ready To Make Your Dream</span>
+                <h1 data-i18n="excellent">Excellent IT Services For Your Success</h1>
+                <p data-i18n="getData">GateData Are A IT Solutions & Technology Services Provider Institutions. Suitable
+                    For IT Solutions, IT Technology, IT Business, Software, Digital Solution And Any Related Services
+                    Company Field.</p>
+                <div class="buttons">
+                    <button data-i18n="ourServices" class="btn-1">
                         Our Services
 
                     </button>
-                    <button   data-i18n="getDetails" class="btn-2"> Get Details
+                    <button data-i18n="getDetails" class="btn-2"> Get Details
 
                     </button>
 
@@ -179,19 +196,19 @@
             <div class="future">
                 <div class="discover">
                     <i class="fa-brands fa-searchengin"></i>
-                    <span>Discover & Assessment</span>
+                    <span data-i18n="Discover">Discover & Assessment</span>
                 </div>
                 <div class="future-state">
                     <i class="fa-regular fa-file-lines"></i>
-                    <span> Future State Planing</span>
+                    <span data-i18n="FutureStatePlaning"> Future State Planing</span>
                 </div>
                 <div class="remeditation">
                     <i class="fa-solid fa-network-wired"></i>
-                    <span>Remeditation& Migration</span>
+                    <span data-i18n="Remeditation">Remeditation& Migration</span>
                 </div>
                 <div class="managed">
                     <i class="fa-solid fa-server"></i>
-                    <span>Managed Services</span>
+                    <span data-i18n="ManagedServices">Managed Services</span>
                 </div>
             </div>
             <div class="about-us-bottom">
@@ -199,22 +216,24 @@
                     <div class="projectDone">
                         <i class="fa-solid fa-folder-tree"></i>
                         <span id="counter" class="projectCount">743</span>
-                        <span>Project Done</span>
+                        <span data-i18n="ProjectDone">Project Done</span>
                     </div>
                 </div>
                 <div class="details">
-                    <h6>Innovative IT Solution & Technology</h6>
-                    <h3>We Design, Deploy, Migrate & Manage Results Driven</h3>
-                    <p>GateData Are A IT Solutions & Technology Services Provider Institutions. Suitable For IT
+                    <h6 data-i18n="InnovativeITSolution">Innovative IT Solution & Technology</h6>
+                    <h3 data-i18n="WeDesign">We Design, Deploy, Migrate & Manage Results Driven</h3>
+                    <p data-i18n="getData">GateData Are A IT Solutions & Technology Services Provider Institutions. Suitable
+                        For IT
                         Solutions, IT Technology, IT Business, Consulting, Software, Digital Solution And Any Related
                         Services Company Field.</p>
                     <div class="icon">
                         <div class="first">
                             <i class="fa-solid fa-code-fork"></i>
                             <div class="deatails">
-                                <h5>Warranty
+                                <h5 data-i18n="WarrantyManagement">Warranty
                                     Management</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, accusantium?
+                                <p data-i18n="lorem10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+                                    accusantium?
                                 </p>
                             </div>
                         </div>
@@ -222,14 +241,14 @@
                             <i class="fa-solid fa-gears"></i>
 
                             <div class="deatails">
-                                <h5>Warranty
-                                    Management</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, accusantium?
+                                <h5 data-i18n="QualityControlSystemt">Quality Control Systemt</h5>
+                                <p data-i18n="lorem10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+                                    accusantium?
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <button>More Abouts Us</button>
+                    <button data-i18n="moreAboutsUs">More Abouts Us</button>
                 </div>
             </div>
         </div>
@@ -295,11 +314,11 @@
         <div class="container">
             <div class="newsletter">
                 <div class="left">
-                    <span>Newsletter</span>
-                    <h4>First Your Be Informed!</h4>
+                    <span data-i18n="Newsletter">Newsletter</span>
+                    <h4 data-i18n="FirstYourBeInformed">First Your Be Informed!</h4>
                 </div>
                 <div class="input">
-                    <input type="email" placeholder="Enter Your Email Address!">
+                    <input data-i18n="placeholder" type="email" placeholder="Enter Your Email Address!">
                     <i class="fa-brands fa-telegram"></i>
                 </div>
             </div>
@@ -307,9 +326,9 @@
                 <div class="inspect">
                     <div class="iconPlusinspect">
                         <i class="fa-solid fa-shield"></i>
-                        <span>Inspect</span>
+                        <span data-i18n="Inspect">Inspect</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea fugit voluptate ad corrupti
+                    <p data-i18n="getData">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea fugit voluptate ad corrupti
                         mollitia dolorem, dolores in sint doloremque!</p>
                     <ul>
                         <li> <i class="fa-brands fa-facebook-f"></i> </li>
@@ -320,33 +339,33 @@
                 </div>
                 <div class="quickLink">
                     <ul>
-                        <li>quick Link</li>
-                        <li>Leadership Team</li>
-                        <li>About Us</li>
-                        <li>Leadership Team</li>
-                        <li>About Us</li>
-                        <li>Leadership Team</li>
+                        <li data-i18n="quickLink">quick Link</li>
+                        <li data-i18n="LeadershipTeam">Leadership Team</li>
+                        <li data-i18n="about">About Us</li>
+                        <li data-i18n="Feature">Feature's Gallery</li>
+                        <li data-i18n="testimonials">Testimonial</li>
+                        <li data-i18n="contact">Contacts</li>
                     </ul>
                 </div>
                 <div class="itServices">
                     <ul>
-                        <li>It Services</li>
-                        <li>Data Center Migration</li>
-                        <li>Data Center Migration</li>
-                        <li>Data Center Migration</li>
-                        <li>Data Center Migration</li>
-                        <li>Data Center Migration</li>
-                        <li>Data Center Migration</li>
-                        <li>Data Center Migration</li>
+                        <li data-i18n="ItServices">It Services</li>
+                        <li data-i18n="DataCenterMigration">Data Center Migration</li>
+                        <li data-i18n="ITProjectManagement">IT Project Management</li>
+                        <li data-i18n="WorkplaceTechnology">Workplace Technology</li>
+                        <li data-i18n="InformationSecurity">Information Security</li>
+                        <li data-i18n="DataCenterDesign">Data Center Design</li>
+                        <li data-i18n="MigrationsCloud">Migrations & Cloud</li>
+                        <li data-i18n="ManagedServices">Managed Services</li>
                     </ul>
                 </div>
                 <div class="resources">
                     <ul>
-                        <li>Resources</li>
-                        <li>Help & FAQ</li>
-                        <li>Contact Us</li>
-                        <li>Careers</li>
-                        <li>Awards</li>
+                        <li data-i18n="resources">Resources</li>
+                        <li  data-i18n="HelpFAQ">Help & FAQ</li>
+                        <li  data-i18n="contact">Contact Us</li>
+                        <li  data-i18n="careers">Careers</li>
+                        <li  data-i18n="awards">Awards</li>
                     </ul>
                 </div>
             </div>
@@ -354,13 +373,13 @@
         </div>
         <div class="PropertyRights">
             <div class="container">
-                <div class="date">@2022 GetData. with Love by <span><a
-                            href="https://m0o0hamedahmed.github.io/Prof-noData-/" target="blank">M.Abolaumn</a></span>
+                <div class="date"  ><span><a
+                    href="https://m0o0hamedahmed.github.io/Prof-noData-/" target="blank" data-i18n="MAbolaumn">@2022 GetData. with Love by M.Abolaumn  </a></span>
                 </div>
                 <ul>
-                    <li>Terms & conditions </li>
-                    <li>Privacy Policy</li>
-                    <li>Sitemap</li>
+                    <li data-i18n="TermsConditions">Terms & conditions </li>
+                    <li data-i18n="PrivacyPolicy">Privacy Policy</li>
+                    <li data-i18n="Sitemap">Site map</li>
                 </ul>
             </div>
         </div>
